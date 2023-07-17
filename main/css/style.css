@@ -36,6 +36,9 @@
      cursor: none;
      
    }
+   .button {
+    transform: scale(0.8);
+   }
   
    h1 {
      margin-top: 0px;
