@@ -4139,12 +4139,19 @@
   margin: 0;
   font-size: 1.5em;
   line-height: 1.2em;
+  transition-delay: 0.5s;
+  transition: 0.4s ease-in-out;
+}
+.card:hover h1, .card:hover p {
+  color: #1e1e1f !important;
 }
 
 .card p {
   font-size: 0.35em;
   margin-top: 0.5em;
   line-height: 2em;
+  transition-delay: 0.5s;
+  transition: 0.4s ease-in-out;
 }
 
 .card .tags {
@@ -4202,7 +4209,7 @@
 }
 
 .card:hover {
-  color: var(--color);
+  color: white !important;
 }
 
 .card:hover:before, .card:hover:after {
@@ -4232,11 +4239,19 @@
   font-size: 1em;
   font-weight: normal;
 }
-
+.mobile_appear {
+  display: none !important;
+}
 /* MEDIA QUERIES */
 @media screen and (max-width: 1285px) {
   .cards-wrapper {
     grid-template-columns: 1fr 1fr;
+  }
+  .mobile_disappear {
+    display: none !important;
+  }
+  .mobile_appear {
+    display: block !important;
   }
 }
 
