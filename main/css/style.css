@@ -4115,6 +4115,7 @@
   
   --bg-filter-opacity: 0.5;
   background-image: linear-gradient(rgba(0,0,0,var(--bg-filter-opacity)),rgba(0,0,0,var(--bg-filter-opacity))), var(--bg-img);
+
   height: 15em;
   width: 12em;
   font-size: 1.5em;
@@ -4130,13 +4131,16 @@
   transition: 0.5s ease-in-out;
   position: relative;
   overflow: hidden;
+  background-size: 100%;
   border: 5px solid #4340405f;
   text-decoration: none;
   border-radius: 1em;
+  transition: 0.4s ease-in-out !important;
 }
 
 .card:hover {
   transform: rotate(0);
+  background-size: 120%;
 }
 .card h1 {
   margin: 0;
@@ -4144,9 +4148,6 @@
   line-height: 1.2em;
   transition-delay: 0.5s;
   transition: 0.4s ease-in-out;
-}
-.card:hover h1, .card:hover p {
-  color: #1e1e1f !important;
 }
 
 .card p {
@@ -4166,13 +4167,14 @@
   background: rgba(98, 98, 98, 0.5);
   border-radius: 0.3rem;
   padding: 0 0.5em;
+  margin-top: 1em;
   margin-right: 0.5em;
   line-height: 1.5em;
   transition: all, var(--transition-time);
 }
 
 .card:hover .tags .tag {
-  background: var(--color);
+  background: #ffffff3c;
   color: white;
 }
 
@@ -4186,30 +4188,7 @@
   opacity: .8;
 }
 
-.card:before, .card:after {
-  content: '';
-  transform: scale(0);
-  transform-origin: top left;
-  border-radius: 50%;
-  position: absolute;
-  left: -50%;
-  top: -50%;
-  z-index: -5;
-  transition: all, var(--transition-time);
-  transition-timing-function: ease-in-out;
-}
 
-.card:before {
-  background: #ddd;
-  width: 250%;
-  height: 250%;
-}
-
-.card:after {
-  background: white;
-  width: 200%;
-  height: 200%;
-}
 
 .card:hover {
   color: white !important;
