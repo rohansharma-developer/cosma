@@ -4172,7 +4172,12 @@
   line-height: 1.5em;
   transition: all, var(--transition-time);
 }
-
+.map_image:hover {
+  box-shadow: 0px 0px 101px -8px rgba(255, 255, 255,0.75);
+-webkit-box-shadow: 0px 0px 101px -8px rgba(255, 255, 255,0.75);
+-moz-box-shadow: 0px 0px 101px -8px rgba(255, 255, 255,0.75);
+transform: scale(1.1);
+}
 .card:hover .tags .tag {
   background: #ffffff3c;
   color: white;
