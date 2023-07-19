@@ -3222,6 +3222,9 @@
      .grid-item {
        padding: 8px;
      }
+     .hero_small_p {
+      font-size: 2vw !important;
+     }
    
      .grid-item._33.tablet-100 {
        padding-top: 16px;
@@ -4263,8 +4266,8 @@
     justify-content: center;
   }
   .card-grid-space .num {
-    /margin-left: 0;
-    /text-align: center;
+    margin-left: 0;
+    text-align: center;
   }
 }
 
