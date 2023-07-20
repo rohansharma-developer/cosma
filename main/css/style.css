@@ -3397,7 +3397,8 @@
        font-size: 4.125em;
      }
      .hero_cosma {
-      font-size: 15em !important;
+      font-size: 12em !important;
+      text-align: center;
      }
      .container {
        padding-right: 4vw;
@@ -4252,6 +4253,9 @@ transform: scale(1.1);
   .card-grid-space .num {
     margin-left: 0;
     text-align: center;
+  }
+  .map__section {
+    padding: 0 4vw !important;
   }
 }
 
