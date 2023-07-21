@@ -4424,3 +4424,6 @@ transform: scale(1.1);
   margin: 0px;
   text-align: center;
 }
+.bg-slate-50 {
+  background-color: #000 !important;
+}
